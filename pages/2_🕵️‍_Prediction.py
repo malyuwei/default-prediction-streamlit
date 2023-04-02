@@ -203,12 +203,6 @@ if btn_predict:
     shap_values_ttl = explainer(X) #  shap_values_ttl = explainer(X_test)
     fig_ttl = shap.plots.beeswarm(shap_values_ttl)
     st.pyplot(fig_ttl)
-    st.write(""" In this chart blue and red mean the feature value, e.g. annual income blue is a smaller value e.g. 40K USD,
-    and red is a higher value e.g. 100K USD. The width of the bars represents the number of observations on a certain feature value,
-    for example with the annual_inc feature we can see that most of the applicants are within the lower-income or blue area. And on axis x negative SHAP
-    values represent applicants that are likely to churn and the positive values on the right side represent applicants that are likely to pay the loan back.
-    What we are learning from this chart is that features such as annual_inc and sub_grade are the most impactful features driving the outcome prediction.
-    The higher the salary is, or the lower the subgrade is, the more likely the applicant to pay the loan back and vice versa, which makes total sense in our case.
-    """)
+ 
 
 
