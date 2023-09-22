@@ -3,5 +3,5 @@ shap==0.41.0
 matplotlib==3.7.1
 ipython==8.10.0
 plotly==5.9.0
-Numpy==1.21.4
 Numba==0.53.0
+Numpy==1.21.4
